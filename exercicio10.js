@@ -1,18 +1,17 @@
 function febre(numeros){
-    let tem = []
-    numeros = [];
+    let tem = [];
 
     for(let i = 0; i <= numeros.length; i++){
-        if(numeros >= 41){
+        if(numeros[i]>= 41){
             
             tem[i] = ("Hipertermia");
-        }else if(numeros >= 39.6 && numeros < 41){
+        }else if(numeros[i] >= 39.6 && numeros[i] < 41){
             tem[i] = ("Febre Alta");
-        }else if(numeros>= 37.8 && numeros < 39.6){
+        }else if(numeros[i]>= 37.8 && numeros[i] < 39.6){
             tem[i] = ("Febre");
-        }else if (numeros  >= 35.1 && numeros < 37.8){
+        }else if (numeros[i] >= 35.1 && numeros[i] < 37.8){
             tem[i] = ("Normal");
-        }else if(numeros <= 35){
+        }else if(numeros[i] <= 35){
             tem[i] = ("Hipotermia");
         }
     }
